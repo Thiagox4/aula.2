@@ -1,0 +1,48 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 50vh;
+    height: 40vh;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    color: rgb(12, 59, 2);
+    animation: descerCentro 2s linear forwards;
+}
+
+.container input,
+.container button {
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container button {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+.container button:hover {
+    background-color: aqua; 
+}
+
+@keyframes descerCentro {
+    from{
+      position: absolute;
+      bottom: 100%;
+    }
+    to{
+      position: absolute;
+      bottom: 30%;
+    }
+  }
